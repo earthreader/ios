@@ -440,6 +440,7 @@
 				C79BC553190D0A4600775CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C79BC554190D0A4600775CBC /* Build configuration list for PBXNativeTarget "EarthReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +449,7 @@
 				C79BC556190D0A4600775CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
