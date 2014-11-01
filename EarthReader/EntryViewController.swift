@@ -11,12 +11,12 @@ import UIKit
 class EntryViewContoller: UIViewController, NSURLConnectionDataDelegate {
     
     @IBOutlet var webView: UIWebView!
-    var feedID = String()
-    var entryID = String()
+    var feedID: String?
+    var entryID: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: NSString(format: "http://127.0.0.1:5000/%@/%@", feedID, entryID))
+        let url = NSURL(string: NSString(format: "http://127.0.0.1:5000/%@/%@", self.feedID!, self.entryID!))
         var request = NSMutableURLRequest(URL: url!)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         let connection = NSURLConnection(request: request, delegate: self, startImmediately: true)

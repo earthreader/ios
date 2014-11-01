@@ -11,11 +11,11 @@ import UIKit
 class FeedViewController: UITableViewController, NSURLConnectionDataDelegate {
     
     var entries: [Entry] = []
-    var feedID = ""
+    var feedID: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: NSString(format: "http://127.0.0.1:5000/%@/", feedID))
+        let url = NSURL(string: NSString(format: "http://127.0.0.1:5000/%@/", self.feedID!))
         var request = NSMutableURLRequest(URL: url!)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         let connection = NSURLConnection(request: request, delegate: self, startImmediately: true)
