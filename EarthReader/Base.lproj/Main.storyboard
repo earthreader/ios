@@ -56,6 +56,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GSX-Tf-LfJ" id="AZQ-1n-8dZ">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Gpa-Hf-kCL" kind="show" id="7ff-gE-c1U"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -67,6 +70,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPQ-fb-Poi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1330" y="168"/>
+        </scene>
+        <!--Entry View Contoller-->
+        <scene sceneID="JgQ-07-wAY">
+            <objects>
+                <viewController id="Gpa-Hf-kCL" customClass="EntryViewContoller" customModule="EarthReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="BKh-hk-H4V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                    <connections>
+                        <outlet property="webView" destination="BKh-hk-H4V" id="ref-r0-Ocs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzj-EV-TfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lcg-y7-Gdc">

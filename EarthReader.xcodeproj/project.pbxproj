@@ -14,6 +14,7 @@
 		C72AA43119BC86EF005175EB /* EarthReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AA43019BC86EF005175EB /* EarthReaderTests.swift */; };
 		C7347B321A053BED00E0BF0F /* EarthReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7347B311A053BED00E0BF0F /* EarthReader.swift */; };
 		C7347B341A0554EE00E0BF0F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7347B331A0554EE00E0BF0F /* FeedViewController.swift */; };
+		C760AA2A1A056101009687B6 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760AA291A056101009687B6 /* EntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C72AA43019BC86EF005175EB /* EarthReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthReaderTests.swift; sourceTree = "<group>"; };
 		C7347B311A053BED00E0BF0F /* EarthReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthReader.swift; sourceTree = "<group>"; };
 		C7347B331A0554EE00E0BF0F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C760AA291A056101009687B6 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				C72AA41D19BC86EF005175EB /* AppDelegate.swift */,
 				C72AA41F19BC86EF005175EB /* SubscriptionViewController.swift */,
 				C7347B331A0554EE00E0BF0F /* FeedViewController.swift */,
+				C760AA291A056101009687B6 /* EntryViewController.swift */,
 				C72AA42119BC86EF005175EB /* Main.storyboard */,
 				C72AA42419BC86EF005175EB /* Images.xcassets */,
 				C72AA41B19BC86EF005175EB /* Supporting Files */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7347B321A053BED00E0BF0F /* EarthReader.swift in Sources */,
+				C760AA2A1A056101009687B6 /* EntryViewController.swift in Sources */,
 				C72AA42019BC86EF005175EB /* SubscriptionViewController.swift in Sources */,
 				C7347B341A0554EE00E0BF0F /* FeedViewController.swift in Sources */,
 				C72AA41E19BC86EF005175EB /* AppDelegate.swift in Sources */,
