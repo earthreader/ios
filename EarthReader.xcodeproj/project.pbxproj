@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C72AA41E19BC86EF005175EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AA41D19BC86EF005175EB /* AppDelegate.swift */; };
-		C72AA42019BC86EF005175EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AA41F19BC86EF005175EB /* ViewController.swift */; };
+		C72AA42019BC86EF005175EB /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AA41F19BC86EF005175EB /* SubscriptionViewController.swift */; };
 		C72AA42319BC86EF005175EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72AA42119BC86EF005175EB /* Main.storyboard */; };
 		C72AA42519BC86EF005175EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72AA42419BC86EF005175EB /* Images.xcassets */; };
 		C72AA43119BC86EF005175EB /* EarthReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AA43019BC86EF005175EB /* EarthReaderTests.swift */; };
+		C7347B321A053BED00E0BF0F /* EarthReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7347B311A053BED00E0BF0F /* EarthReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +29,13 @@
 		C72AA41819BC86EF005175EB /* EarthReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AA41C19BC86EF005175EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AA41D19BC86EF005175EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C72AA41F19BC86EF005175EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C72AA41F19BC86EF005175EB /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		C72AA42219BC86EF005175EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C72AA42419BC86EF005175EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C72AA42A19BC86EF005175EB /* EarthReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72AA42F19BC86EF005175EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C72AA43019BC86EF005175EB /* EarthReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthReaderTests.swift; sourceTree = "<group>"; };
+		C7347B311A053BED00E0BF0F /* EarthReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				C72AA41D19BC86EF005175EB /* AppDelegate.swift */,
-				C72AA41F19BC86EF005175EB /* ViewController.swift */,
+				C72AA41F19BC86EF005175EB /* SubscriptionViewController.swift */,
 				C72AA42119BC86EF005175EB /* Main.storyboard */,
 				C72AA42419BC86EF005175EB /* Images.xcassets */,
 				C72AA41B19BC86EF005175EB /* Supporting Files */,
+				C7347B311A053BED00E0BF0F /* EarthReader.swift */,
 			);
 			path = EarthReader;
 			sourceTree = "<group>";
@@ -208,7 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72AA42019BC86EF005175EB /* ViewController.swift in Sources */,
+				C7347B321A053BED00E0BF0F /* EarthReader.swift in Sources */,
+				C72AA42019BC86EF005175EB /* SubscriptionViewController.swift in Sources */,
 				C72AA41E19BC86EF005175EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +401,7 @@
 				C72AA43619BC86EF005175EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C72AA43719BC86EF005175EB /* Build configuration list for PBXNativeTarget "EarthReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				C72AA43919BC86EF005175EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
