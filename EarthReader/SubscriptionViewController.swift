@@ -31,9 +31,9 @@ class SubscriptionViewController: UITableViewController, NSURLConnectionDataDele
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let indexPath = self.tableView.indexPathForSelectedRow()
-        var destinationViewController = segue.destinationViewController as FeedViewController
-        destinationViewController.feedID = self.feeds[indexPath!.row].id
-        destinationViewController.title = self.feeds[indexPath!.row].label
+        var feedViewController = segue.destinationViewController as FeedViewController
+        feedViewController.feedID = self.feeds[indexPath!.row].id
+        feedViewController.title = self.feeds[indexPath!.row].label
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

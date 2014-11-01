@@ -33,10 +33,10 @@ class FeedViewController: UITableViewController, NSURLConnectionDataDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let indexPath = self.tableView.indexPathForSelectedRow()
-        var destinationViewController = segue.destinationViewController as EntryViewContoller
-        destinationViewController.feedID = self.feedID
-        destinationViewController.entryID = self.entries[indexPath!.row].id
-        destinationViewController.title = self.entries[indexPath!.row].title
+        var entryViewController = segue.destinationViewController as EntryViewContoller
+        entryViewController.feedID = self.feedID
+        entryViewController.entryID = self.entries[indexPath!.row].id
+        entryViewController.title = self.entries[indexPath!.row].title
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
