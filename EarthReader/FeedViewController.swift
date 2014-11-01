@@ -25,8 +25,8 @@ class FeedViewController: UITableViewController, NSURLConnectionDataDelegate {
         var data = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
         var entries = data["entries"] as NSArray
         for entry in entries {
-            let test = Entry(id: entry["id"] as String, title: entry["title"] as String)
-            self.entries.append(test)
+            let entry = Entry(id: entry["id"] as String, title: entry["title"] as String)
+            self.entries.append(entry)
         }
         self.tableView.reloadData()
     }
