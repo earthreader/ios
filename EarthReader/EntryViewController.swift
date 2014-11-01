@@ -25,17 +25,9 @@ class EntryViewContoller: UIViewController, NSURLConnectionDataDelegate {
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         var data = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
         let entry = data["entry"] as NSDictionary
-        var summary = entry["summary"] as? String
-        var content = entry["content"] as? String
-        var htmlString = String()
-        if (summary != nil && content != nil) {
-            htmlString = summary! + content!
-        } else if (summary == nil) {
-            htmlString = content!
-        } else if (content == nil) {
-            htmlString = summary!
-        }
-        self.webView.loadHTMLString(htmlString, baseURL: NSURL(string: entry["id"] as String))
+        var summary = entry["summary"] as? String ?? ""
+        var content = entry["content"] as? String ?? ""
+        self.webView.loadHTMLString(summary + content, baseURL: NSURL(string: entry["id"] as String))
     }
     
     override func didReceiveMemoryWarning() {
