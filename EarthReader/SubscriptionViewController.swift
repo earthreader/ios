@@ -29,6 +29,13 @@ class SubscriptionViewController: UITableViewController, NSURLConnectionDataDele
         }
         self.tableView.reloadData()
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let indexPath = self.tableView.indexPathForSelectedRow()
+        var destinationViewController = segue.destinationViewController as FeedViewController
+        destinationViewController.feedID = self.feeds[indexPath!.row].id
+        destinationViewController.title = self.feeds[indexPath!.row].label
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("FeedCell") as UITableViewCell

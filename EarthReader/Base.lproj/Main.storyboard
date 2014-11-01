@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Earth Reader-->
+        <!--All Feeds-->
         <scene sceneID="aUC-s3-KA0">
             <objects>
                 <tableViewController id="oiY-9Z-0LF" customClass="SubscriptionViewController" customModule="EarthReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,6 +26,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qeY-yk-oOt" kind="show" id="6ef-Ax-Lrx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,11 +36,37 @@
                             <outlet property="delegate" destination="oiY-9Z-0LF" id="52X-bU-I5d"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Earth Reader" id="sdJ-ij-ISE"/>
+                    <navigationItem key="navigationItem" title="All Feeds" id="sdJ-ij-ISE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxz-Zy-Hse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="168"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="ThS-XO-0cm">
+            <objects>
+                <tableViewController id="qeY-yk-oOt" customClass="FeedViewController" customModule="EarthReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w8n-c7-lDl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" id="GSX-Tf-LfJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GSX-Tf-LfJ" id="AZQ-1n-8dZ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qeY-yk-oOt" id="2iS-4d-63R"/>
+                            <outlet property="delegate" destination="qeY-yk-oOt" id="dKO-Qc-gP9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPQ-fb-Poi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lcg-y7-Gdc">
