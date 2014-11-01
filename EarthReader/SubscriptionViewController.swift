@@ -20,7 +20,6 @@ class SubscriptionViewController: UITableViewController, NSURLConnectionDataDele
     }
     
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
-        println(data)
         var data = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
         var subscriptions = data["feeds"] as NSArray
         for subscription in subscriptions {
