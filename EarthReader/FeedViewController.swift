@@ -10,8 +10,6 @@ import UIKit
 
 class FeedViewController: UITableViewController, NSURLConnectionDataDelegate {
     
-    @IBOutlet weak var titleLabel: UINavigationItem!
-    
     var entries: [Entry] = []
     var feedID = ""
     
